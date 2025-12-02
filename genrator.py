@@ -23,7 +23,7 @@ def run(playwright: Playwright) -> None:
                 for crypto in cryptos:
                     fake = Faker()
                     nom = fake.name()
-                    url2 = f"https://www.google.com/search?q={nom.replace(' ', '+')}+{crypto}+intext:\"{i}\"+before:2019+after:2015"
+                    url2 = f"https://www.ecosia.org/search?method=index&q={nom.replace(' ', '+')}+{crypto}+intext:\"{i}\"+before:2019+after:2015"
 
 
                     page.goto(url2)
