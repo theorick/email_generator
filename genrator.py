@@ -35,8 +35,6 @@ def run(playwright: Playwright) -> None:
         with open(nom_fichier, 'a', buffering=1) as fichier:
             for email in emails_list:
                 url2 = f"https://www.ecosia.org/search?method=index&q={prenom}+{nom}+{info_spmt.replace(" ", "+")}+intext:\"{email}\""
-
-                print(url2)
                 page.goto(url2)
 
 
