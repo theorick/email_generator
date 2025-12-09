@@ -8,8 +8,8 @@ import pyfiglet
 ascii_banner = pyfiglet.figlet_format('Name2Mail', font="slant")
 print("\n", "-"*100, "\n")
 print(ascii_banner)
-print("Un tools fait pour générer des mails, en fonction des informations fournies par Vous! "
-      "\nVous récupérer toutes les informations dans info.txt."
+print("Un tools orientés OSINT fait pour générer des mails, en fonction des informations fournies par Vous! "
+      "\nVous récupérer toutes les informations dans info.txt"
       "\nCréer par théorick")
 print("\n", "-"*100, "\n")
 
@@ -35,6 +35,8 @@ def run(playwright: Playwright) -> None:
         with open(nom_fichier, 'a', buffering=1) as fichier:
             for email in emails_list:
                 url2 = f"https://www.ecosia.org/search?method=index&q={prenom}+{nom}+{info_spmt.replace(" ", "+")}+intext:\"{email}\""
+
+                #print(url2)
                 page.goto(url2)
 
 
@@ -74,6 +76,7 @@ def run(playwright: Playwright) -> None:
                     print("Email pas trouver")
                 for email in list(set_emails):
                     emails = str(email)+ "\n"
+                    fichier.write(emails)
 
     # ---------------------
     context.close()
