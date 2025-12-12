@@ -16,8 +16,7 @@ print("\n", "-"*100, "\n")
 def run(playwright: Playwright) -> None:
     emails_list = ["hotmail.com", "outlook.com", "gmail.com", 'yahoo.com', 'protonmail.com']
 
-    nom = str(input('Nom a rechercher : '))
-    prenom = str(input('Prenom a rechercher :'))
+    nom = str(input('Prenom et Nom a rechercher : '))
     info_spmt = str(input('Information a rechercher : '))
     nom_fichier = 'info.txt'
     browser = playwright.chromium.launch(headless=False)
@@ -34,7 +33,7 @@ def run(playwright: Playwright) -> None:
         email_empty = 0
         with open(nom_fichier, 'a', buffering=1) as fichier:
             for email in emails_list:
-                url2 = f"https://www.ecosia.org/search?method=index&q={prenom.replace(" ", "+")}+{nom.replace(" ", "+")}+{info_spmt.replace(" ", "+")}+intext:\"{email}\""
+                url2 = f"https://www.ecosia.org/search?method=index&q={nom.replace(" ", "+")}+{info_spmt.replace(" ", "+")}+intext:\"{email}\""
 
                 #print(url2)
                 page.goto(url2)
