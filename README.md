@@ -22,25 +22,25 @@ Les résultats sont sauvegardés dans un fichier info.txt.
 
 Recherche d’emails liés à :
 
-Prénom + Nom
+- Prénom + Nom
 
-Informations supplémentaires (entreprise, pseudo, ville, etc.)
+- Informations supplémentaires (entreprise, pseudo, ville, etc.)
 
 Support de plusieurs domaines :
 
-gmail.com
+- gmail.com
 
-hotmail.com
+- hotmail.com
 
-outlook.com
+- outlook.com
 
-yahoo.com
+- yahoo.com
 
-protonmail.com
+- protonmail.com
 
-Détection et suppression des doublons
+- Détection et suppression des doublons
 
-Sauvegarde automatique des résultats
+- Sauvegarde automatique des résultats
 
 📦 Prérequis
 
@@ -49,62 +49,54 @@ Python 3.9+
 Google Chromium (installé automatiquement par Playwright)
 
 Modules Python requis
+
 pip install playwright beautifulsoup4 pyfiglet
 
 
 Puis installer le navigateur Playwright :
 
+
 playwright install
 
-🚀 Utilisation
 
-Lancer le script :
-
-python name2mail.py
-
-
-Puis renseigner :
-
-Prénom et Nom à rechercher
-
-Information supplémentaire (ex : entreprise, pseudo, domaine, ville…)
-
-Les emails trouvés seront affichés dans le terminal et enregistrés dans :
-
-info.txt
 
 📁 Structure du projet
 Name2Mail/
 │
+
 ├── name2mail.py
+
 ├── info.txt
+
 ├── README.md
 
 ⚠️ Avertissement légal
 
 Ce projet est destiné exclusivement à :
 
-L’apprentissage
+- L’apprentissage
 
-La recherche OSINT
+- La recherche OSINT
 
-Les audits de sécurité autorisés
+- Les audits de sécurité autorisés
 
-Les enquêtes légales
+- Les enquêtes légales
+
 
 ❌ Toute utilisation à des fins de :
 
-harcèlement
+- harcèlement
 
-spam
+- spam
 
-phishing
+- phishing
 
-atteinte à la vie privée
+- atteinte à la vie privée
 
-est strictement interdite.
+- est strictement interdite.
 
-L’auteur décline toute responsabilité en cas de mauvaise utilisation.
+- L’auteur décline toute responsabilité en cas de mauvaise utilisation.
+
 
 👤 Auteur
 
@@ -112,26 +104,15 @@ Théorick
 
 Projet OSINT personnel
 
-🛠️ Améliorations possibles
-
-Export CSV / JSON
-
-Support d’autres moteurs (Google, Bing, DuckDuckGo)
-
-Mode headless
-
-Proxy / rotation d’IP
-
-Interface CLI avancée
 
 ⭐ Contribution
 
 Les contributions sont les bienvenues !
 
-Fork le projet
+- Fork le projet
 
-Crée une branche
+- Crée une branche
 
-Commit tes modifications
+- Commit tes modifications
 
-Ouvre une Pull Request
+- Ouvre une Pull Request
